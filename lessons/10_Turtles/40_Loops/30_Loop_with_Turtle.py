@@ -11,9 +11,11 @@ turtle.setup(600,600,0,0)               # Set the size of the window
 
 tina = turtle.Turtle()                  # Create a turtle named tina
 
-sides = 5
+tina.speed(0)
+
+sides = 314159
 angle = 360/sides
-size = 100
+size = 0.1
 
 for i in range(sides):
     tina.forward(size)                       # Move tina forward by the forward distance
