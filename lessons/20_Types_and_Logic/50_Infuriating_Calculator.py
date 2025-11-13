@@ -20,6 +20,31 @@ simpledialog.askfloat() or simpledialog.askinteger(), and for the math operation
 you can ask for a string with simpledialog.askstring().
 """
 
+from tkinter import messagebox, simpledialog, Tk # import required modules
+
+window = Tk()     # Create a window object
+window.withdraw() # Hide the window; we just want to see pop ups
+
+
+one =  simpledialog.askfloat("Number 1", "Enter the first number to calculator. (1/2)")
+two =  simpledialog.askfloat("Number 2", "Enter the second number to calculator. (2/2)")
+
+if simpledialog.askfloat("operation", "Would you like to add them together? (1(no) or 2(yes))") == 2:
+   messagebox.showinfo('Sum:', "The answer is " + str(one + two))
+elif simpledialog.askfloat("operation", "Would you like to subtact them? (1(no) or 2(yes))") == 2:
+   messagebox.showinfo('Sum:', "The answer is " + str(one - two))
+elif simpledialog.askfloat("operation", "Would you like to multipy them? (1(no) or 2(yes))") == 2:
+   messagebox.showinfo('Sum:', "The answer is " + str(one * two))
+elif simpledialog.askfloat("operation", "Would you like to divide 1 by 2? (1(no) or 2(yes))") == 2:
+   messagebox.showinfo('Sum:', "The answer is " + str(one / two))
+elif simpledialog.askfloat("operation", "Would you like to divide 2 by 1? (1(no) or 2(yes))") == 2:
+   messagebox.showinfo('Sum:', "The answer is " + str(two / one))
+
+
+
+
+
+
 # Import the required modules
 
 # Create a window object

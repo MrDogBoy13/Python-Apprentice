@@ -7,6 +7,20 @@ at the comments and the code snippets in the previous lessons, like
 03_My_Ages.py, to figure out how to complete the program.
 """
 
+from tkinter import messagebox, simpledialog, Tk # import required modules
+
+window = Tk()     # Create a window object
+window.withdraw() # Hide the window; we just want to see pop ups
+
+# Ask the user's age
+
+one =  simpledialog.askfloat("Number 1", "Enter the first number to sum up. (1/2)")
+two =  simpledialog.askfloat("Number 2", "Enter the second number to sum up. (2/2)")
+three = one + two
+messagebox.showinfo('Sum:', "The sum is " + str(three))
+
+window.mainloop()  
+
 # Import the required modules
 
 # Create a window object
